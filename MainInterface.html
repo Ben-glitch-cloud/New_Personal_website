@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="MainInterface.css">
+    <title>Document</title>
+</head>
+    <div class="navBar">  
+        <div class="navBarItem">
+            <div class="barOne"></div>
+            <div class="barTwo"></div>
+            <div class="barThree"></div>
+            <div class="navBarItemDropDown">
+                <p><a href="MainInterface.html#AboutMe">About Me</a></p>
+                <p><a href="MainInterface.html#MyProjects">Projects</a></p>  
+                <p><a href="MainInterface.html#game">!Game</a></p>
+                <p><a href="MainInterface.html#MyWorkExperience">Work</a></p>  
+                <p><a href="MainInterface.html#education">Education</a></p>
+                <p><a href="MainInterface.html#MyHobbies">Hobbies</a></p> 
+                <p><a href="https://www.linkedin.com/in/benedictlawrence/">Contact</a></p>
+            </div>
+        </div>
+    </div>   
+    <div class="container">
+        <video class="videoPage" id="vid" autoplay muted>
+            <source type="video/mp4" src="./Video/pexels-mart-production-7565446.mp4"> 
+        </video>  
+        <div class="welcome">
+            <p>Hello<br> My name is Ben</p>
+            <p class="smallDes">A Front-end software devloper</p> 
+            <button class="viewProjectButton"><a href="MainInterface.html#MyProjects">View Projects</a></button>
+        </div>
+    </div>
+    <div class="aboutPage" id="AboutMe">
+        <img class="profilePic" src="./Images/IMG_20201223_123634_218.jpg">  
+        <hr>  
+        <div class="aboutInfo">
+            <div class="aboutMeDiscription"> 
+            <h3>A Bit About Me</h3>
+            <p class="profileDesctipion">I am a highly motivated software developer recently graduated from Makers Academy, having presviously gained a first class degree in Business Management. My degree gave me a good understanding of business and organisational models, however the potential of digital and tech on multiple sectors interests me the most. I enjoyed demonstrable success as a member my University's marketing team, with responsibility for digital campaigns; teaching myself to code, create media assests, and use web publishing software, resulting in increased traffic and engagement. I am looking to secure a junior developer role, where I can contribute to business growth via enhanced user experience, whilst learning and developing new skills.</p> 
+            </div> 
+            <div class="languagesListBlock"> 
+            <h3>My Languages</h3>
+            <div class="languagesList">
+                <p>HTML</p>
+                <p>CSS</p> 
+                <p>Javascript</p> 
+                <p>React</p>
+                <p>Express</p> 
+                <p>MySQL</p> 
+                <p>NodeJS</p> 
+                <p>C#</p> 
+            </div>
+            </div> 
+        </div>
+    </div> 
+    <div class="projects"> 
+        <h3>Projects</h3>
+        <div class="projectOne" id="MyProjects"> 
+            <p class="projectNumber"><b>01</b></p>     
+            <div class="projectOneInfo"> 
+                    <img src="./Images/pexels-photo-217250.webp">   
+                    <hr>  
+                        <div class="projectOneInfoItem">
+                            <h3>Message Board</h3>
+                            <p>A full stack messaging board application, write down your ideas and share them with others on the board.</p>   
+                            <div class="ProjectOneInfoItemLau">
+                                <p>React</p> 
+                                <p>NodeJs</p> 
+                                <p>Express</p> 
+                                <p>MongoDB</p>
+                                <p>Jest</p> 
+                            </div>
+                            <button class="ViewGithubButton"><a href="https://github.com/Ben-glitch-cloud/Message_Board_Web_App">Github</a></button> 
+                        </div>
+            </div> 
+        </div>
+
+        <div class="projectOne">
+            <p class="projectNumber"><b>02</b></p>    
+            <div class="projectOneInfo">
+                <img src="./Images/pexels-quang-nguyen-vinh-2133193.jpg">   
+                <hr>
+                <div class="projectOneInfoItem">
+                    <h3>Ride The Ducks</h3>
+                    <p>An all-in-one traveller app that provides useful information for a selected destination.</p>    
+                    <div class="ProjectOneInfoItemLau">
+                        <p>Native React</p> 
+                        <p>Ruby</p> 
+                        <p>Jest</p> 
+                        <p>Firebase</p>
+                    </div> 
+                    <button class="ViewGithubButton"><a href="https://github.com/RideTheDuck/RideTheDuck">Github</a></button>  
+                </div>
+            </div>
+        </div>
+
+        <div class="projectOne">
+            <p class="projectNumber"><b>03</b></p>    
+            <div class="projectOneInfo">
+                <img src="./Images/pexels-caleb-oquendo-3023476.jpg">   
+                <hr>
+                <div class="projectOneInfoItem">
+                    <h3>Food Delivery app</h3>
+                    <p>A fast food delivery web application.</p> 
+                    <div class="ProjectOneInfoItemLau">
+                        <p>React</p> 
+                    </div>
+                    <button class="ViewGithubButton"><a href="https://github.com/Ben-glitch-cloud/Food_delivery_app">Github</a></button>   
+                </div>
+            </div>
+        </div>
+    </div> 
+    
+    <div class="game" id="game"> 
+        <h3>A short Game</h3>
+        <div class="colourBlock">
+            <p class="findColourMes">What colour is <span id="FindColour"></span></p> 
+            <div class="colourBlockItem">
+                <div id="BlockOne" class="colourSqure"></div>
+                <div id="BlockTwo" class="colourSqure"></div>
+                <div id="BlockThree" class="colourSqure"></div>
+                <div id="BlockFour" class="colourSqure"></div>
+            </div> 
+            <p id="gameMessage">Click one</p>
+            <button id="reset">Reset</button> 
+        </div> 
+    </div> 
+
+
+    <div class="workExperience" id="MyWorkExperience"> 
+        <h3>Work Experience</h3>
+        <div class="itemOneWorkExerience">
+            <p class="jobTitle">Full Stack Software Developer | Interactive Media Group (IMG)</p>  
+            <p><b>July 2021 - October 2021</b></p>
+            <p>Responsible for providing safety instructions to customers before participating in activities. Conducting equipment and infrastructure checks to make sure they are safe to use. Handling guest enquiries to ensure the highest level of customer satisfaction.</p>
+        </div> 
+
+        <div class="itemOneWorkExerience">
+            <p class="jobTitle">Junior software Developer Freelance</p>  
+            <p><b>April 2022 - Present</b></p>
+            <p>I have recently worked on a paid freelance project to build a portal page for a courier company. This undertaking has involved building on my knowledge of the JavaScript library React, quickly understanding the client's API system in order to return customer package data. To design the UI, I utilised software Wireframe to create the layout of the interface. During the development, I kept the client regularly updated to discuss progress, design and functionality. I enjoyed working closely with the client team. Challenges I faced including poor API, with inconsistent data returns which I relayed to the client.
+            </p>
+        </div>
+
+        <div class="itemOneWorkExerience">
+            <p class="jobTitle">High Ropes Instructor | Go Ape franchise of Merlin</p>  
+            <p><b>April 2022 - Present</b></p>
+            <p>Responsible for providing safety instructions to customers before participating in activities. Conducting equipment and infrastructure checks to make sure they are safe to use. Handling guest enquiries to ensure the highest level of customer satisfaction.</p>
+        </div>
+
+        <div class="itemOneWorkExerience">
+            <p class="jobTitle">Digital Marketing Assistant | Solent Univerity</p>  
+            <p><b>October 2018 - April 2019</b></p>
+            <p>Responsible for managing social media accounts relating to Solent University alumni, by creating social media content to inform previous Solent students about upcoming events which are intriguing. Moreover, utilising social media analytics to view the engagement of users and in turn whether the content is engaging. </p>
+        </div> 
+
+        <div class="itemOneWorkExerience">
+            <p class="jobTitle">Waiter | Royal Automobile Club</p>  
+            <p><b>July 2018 - Augest 2018  &  July 2017 - Augest 2017</b></p>
+            <p>I was responsible for managing my given section of the restaurant, which included 11 tables that could hold up to 24 covers at any one time. My focus was giving customers the best experience possible with both excellent service and attending to the customer’s needs.</p>
+        </div>
+    </div>  
+
+    <div id="education" class="education"> 
+        <h3>Education</h3>
+        <div class="itemOneEducation">  
+            <div class="itemInfo">
+                <p class="school">MAKERS Coding Bootcamp</p>
+                <p><b>2020 November - 2021 February</b></p>
+            </div> 
+            <p>I learned to implement the testing framework Rspec alongside the practice of test-driven development (TDD). This greatly assisted me in the debugging of my projects, as I was able to plan and reflect my code appropriately for testing. I would apply this process later to JavaScript with the testing framework Jasmine. Introduced to the design of the model-view-controller(MVC), enabling me to understand areas in which a web application functions to both the user,the programmer, and in regard to the front and back end. Further new areas of practice applied to databases (SQL), frameworks such as Sinatra, and expanding my coding languages with HTML5 and CSS3.</p>
+        </div> 
+
+        <div class="itemOneEducation"> 
+            <div class="itemInfo">
+                <p class="school">Southampton Solent University</p>
+                <p><b>2016 September - 2019 June</b></p>
+            </div>
+            <p>Bachelor's degree in Buinesses Managment, First class</p>
+        </div>
+    </div>
+    
+    <div class="hobbies" id="MyHobbies">  
+        <h3>Hobbies</h3>
+        <p>Rock Climbing</p>  
+        <p>Bouldering</p>
+        <p>Table Tennis</p>
+        <p>Walking</p>
+        <p>Participating in hacker events</p> 
+    </div>
+
+    <div class="contact"> 
+        <button><a href="https://github.com/Ben-glitch-cloud">Github Profile</a></button>
+        <button><a href="https://www.linkedin.com/in/benedictlawrence/">Contact</a></button>
+    </div>
+    <script type="module" src="MainInterface.js"></script>
+</html> 
+
+<!-- Project Page -->
