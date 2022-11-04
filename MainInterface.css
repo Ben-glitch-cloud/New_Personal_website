@@ -409,7 +409,7 @@ hr{
     .projectOne{
         flex-direction: row; 
         align-items: flex-start; 
-        justify-content: center; 
+        /* justify-content: center;  */
         margin: 50px 0px;
     }   
 
@@ -438,7 +438,6 @@ hr{
         justify-content: flex-start;
         align-items: flex-start;  
         flex-wrap: wrap;
-         
         margin: 10px 0px;
     } 
 
@@ -449,7 +448,10 @@ hr{
         background-color: #0C2D48;
         border-radius: 5px; 
         color: white; 
-        
+    } 
+
+    .ProjectOneInfoItemLau{
+        width: 100%;
     }
 } 
 
