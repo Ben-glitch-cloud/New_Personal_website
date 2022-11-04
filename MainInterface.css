@@ -409,7 +409,7 @@ hr{
     .projectOne{
         flex-direction: row; 
         align-items: flex-start; 
-        /* justify-content: center;  */
+        justify-content: center; 
         margin: 50px 0px;
     }   
 
