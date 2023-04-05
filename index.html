@@ -19,7 +19,7 @@
                 <p><a href="index.html#MyWorkExperience">Work</a></p>  
                 <p><a href="index.html#education">Education</a></p>
                 <p><a href="index.html#MyHobbies">Hobbies</a></p> 
-                <p><a href="https://www.linkedin.com/in/benedictlawrence/">Contact</a></p>
+                <p><a href="index.html#contactForm">Contact</a></p>
             </div>
         </div>
     </div>   
@@ -225,10 +225,31 @@
             <p>Participating in hacker events</p>  
         </div>
     </div>
-
-    <div class="contact-form">
-        <h2>Contact</h2>
-        <a href="mailto:btlawrence44@gmail.com?;subject=text">Email me</a>
+    <div class="form">
+        <div class="formContainer">
+            <h2>Form</h2>
+            <div class="formContainerItem">
+                <form id="contactForm" onsubmit="SendEmail(); reset(); return false">
+                    <div class="nameAndEmailItem">
+                        <div class="nameItem">
+                            <input type="text" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="emailItem">
+                            <input type="text" id="email" placeholder="Your Email" required>
+                        </div>
+                    </div>
+                    <div>
+                        <input class="subjectInputArea" type="text" id="subject" placeholder="Subject">
+                    </div>
+                    <div>
+                        <textarea type="text" rows="5" id="message" placeholder="Your Message" required></textarea>
+                    </div>
+                    <div class="submitContainer">
+                        <input type="submit" value="Send Message" class="submit">
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
 
     <div class="contact"> 
@@ -237,6 +258,20 @@
     </div> 
     <p class="BottomTextInfo">Site created in 2022 by Benedict Lawrence</p>
     <script type="module" src="MainInterface.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+            function SendEmail(){
+                Email.send({
+                SecureToken : "240292cb-8fa8-4fbe-a31f-2701657e7098",
+                To : "benedictlawrence539@gmail.com",
+                From : "benedictlawrence539@gmail.com", 
+                Subject : document.getElementById('subject').value,
+                Body : `Name : ${document.getElementById('name').value} <br> Email : ${document.getElementById('email').value} <br> Message : ${document.getElementById('message').value} <br>`
+            }).then(
+                message => alert("Message Sent Succesfully")
+            );
+            }
+    </script>
 </html> 
 
 <!-- Project Page -->
