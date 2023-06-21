@@ -108,16 +108,18 @@
         <div class="projectOne">
             <p class="projectNumber"><b>03</b></p>    
             <div class="projectOneInfo">
-                <img src="./Images/pexels-caleb-oquendo-3023476.jpg">   
+                <img src="./Images/london-big-ben-image.jpg">   
                 <hr>
                 <div class="projectOneInfoItem">
-                    <h3>Restaurant Menu Web Application</h3>
-                    <p>Browse at the restaurant menu, if you see something you fancy add it to your basket. View all the items you want to purchase and they`re combined total cost. Remove an item if you no longer want it.</p> 
+                    <h3>The London Quiz</h3>
+                    <p>Test your knowledge of London by answering the multiple choice questions about the city. Ones you have completed the quiz you will receive feedback and answers to any wrongly answered questions.</p> 
                     <div class="ProjectOneInfoItemLau">
-                        <p>React</p> 
-                        <p>CSS</p>
+                        <p>HTML5</p> 
+                        <p>CSS3</p>
+                        <p>Javascript</p>
                     </div>
-                    <button class="ViewGithubButton"><a href="https://github.com/Ben-glitch-cloud/Food_delivery_app">Github</a></button>   
+                    <button class="ViewGithubButton" id="demo_btn" target="_blank"><a href="https://main--luxury-raindrop-94456f.netlify.app/">View</a></button>
+                    <button class="ViewGithubButton" target="_blank"><a href="https://github.com/Ben-glitch-cloud/multiple_choice_london_quiz/blob/main/README.md">Github</a></button>   
                 </div>
             </div>
         </div>
@@ -134,7 +136,7 @@
                         <p>HTML</p> 
                         <p>Sass</p>
                     </div>
-                    <button class="ViewGithubButton" id="demo_btn"><a href="https://ohmyfood-website.netlify.app/">Demo</a></button>  
+                    <button class="ViewGithubButton" id="demo_btn"><a href="https://ohmyfood-website.netlify.app/">View</a></button>  
                     <button class="ViewGithubButton"><a href="https://github.com/Ben-glitch-cloud/Food_delivery_app">Github</a></button>  
                     <button class="ViewGithubButton" id="mock_up_btn"><a href="./documation/Mockups.pdf" download="Mockups.pdf">Mockups</a></button> 
                     <button class="ViewGithubButton" id="docs_btn"><a href="./documation/Creative_Brief_Ohmyfood.pdf" download="Creative_Brief_Ohmyfood.pdf">Documentation</a></button>     
@@ -260,10 +262,11 @@
     <script type="module" src="MainInterface.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script>
+            console.log(document.getElementById('email').value.trim())
             function SendEmail(){
                 Email.send({
                 SecureToken : "240292cb-8fa8-4fbe-a31f-2701657e7098",
-                To : "benedictlawrence539@gmail.com",
+                To : 'benedictlawrence539@gmail.com',
                 From : "benedictlawrence539@gmail.com", 
                 Subject : document.getElementById('subject').value,
                 Body : `Name : ${document.getElementById('name').value} <br> Email : ${document.getElementById('email').value} <br> Message : ${document.getElementById('message').value} <br>`
